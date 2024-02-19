@@ -1,0 +1,25 @@
+{
+  "name": "github-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install && tsc -p .",
+    "format": "prettier --write .",
+    "pm2:staging": "tsc && pm2 start ts_build/index.js --name 'Pulse' -i 1",
+    "dev": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayankverma19/testing-github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayankverma19/testing-github/issues"
+  },
+  "homepage": "https://github.com/mayankverma19/testing-github#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
